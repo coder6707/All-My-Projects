@@ -1,6 +1,7 @@
 i = 0
 while i == 0:
     name= input("ENTER NAME: ")
+    name = name.lower()
     if name == "quit":
         print("thank you")
         break
