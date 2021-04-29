@@ -1,17 +1,17 @@
 import requests
 from random import choice
-#import pyfiglet
+import pyfiglet
 
-#header = pyfiglet.figlet_format("LAME JOKES 3000!")
-#print(header)
+header = pyfiglet.figlet_format("LAME JOKES 3000!")                 
+print(header)
 
-user_input = input("what would you like to search for? ")
+user_input = input("what would you like to search for? ")     
 url = "https://icanhazdadjoke.com/search"
 res = requests.get(
 	url, 
 	headers={"Accept":"application/json"},
 	params={"term":user_input}
-).json()
+).json() 
 
 num_jokes = res["total_jokes"]
 results = res["results"]
