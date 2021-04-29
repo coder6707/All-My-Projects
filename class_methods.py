@@ -67,15 +67,13 @@ print(User.display_active_users())
 
 
 
-
-# user1= User("joe", "blake", 27)
-# user2= User("blanca", "blanc", 22)
-# print(User.display_active_users())
-# user1= User("joe", "blake", 27)
-# user2= User("blanca", "blanc", 22)
-# print(User.display_active_users())
-
-# tom = User.from_string("Tom,Jones,89")
-# print(tom.first)
-# print(tom.full_name())
-# print(tom.birthday())
+user1= User("joe", "blake", 27)
+user2= User("blanca", "blanc", 22)
+print(User.display_active_users())
+user1= User("joe", "blake", 27)
+user2= User("blanca", "blanc", 22)
+print(User.display_active_users())
+tom = User.from_string("Tom,Jones,89")
+print(tom.first)
+print(tom.full_name())
+print(tom.birthday())
