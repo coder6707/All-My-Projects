@@ -179,4 +179,4 @@ button_power.grid(row=7, column=2 )
 
 root.mainloop()
 
-
+ 
