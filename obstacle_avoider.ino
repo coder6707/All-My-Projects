@@ -1,3 +1,4 @@
+
 void setup()
 {
   Serial.begin(9600);
@@ -13,14 +14,14 @@ void setup()
 
 void loop()
 {
-  long ak, vivi;
-  digitalWrite(11, HIGH);
+  long ak, mi;                                   
+  digitalWrite(11, HIGH);                      /* This part is using the variables ak and mi while ak in the input given by the */
   delayMicroseconds(15);
   digitalWrite(11, LOW);
   ak = pulseIn(12, HIGH);
-  vivi = ak / 2 / 29.1;
+  mi = ak / 2 / 29.1;
 
-  if (vivi < 7)
+  if (mi < 7)
   {
     digitalWrite(9, HIGH);
     digitalWrite(8, LOW);
@@ -30,7 +31,7 @@ void loop()
     analogWrite(5, 200);
   }
 
-   else if (vivi > 7)
+   else if (mi > 7)
   {
     digitalWrite(9, HIGH);
     digitalWrite(8, LOW);
